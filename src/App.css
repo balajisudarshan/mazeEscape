@@ -1,0 +1,66 @@
+/* App-level responsive styles and layout rules */
+
+/* Hero grid layout */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
+/* Visualizer main layout */
+@media (max-width: 1024px) {
+  .visualizer-main-layout {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Navigation */
+@media (max-width: 820px) {
+  .desktop-nav {
+    display: none !important;
+  }
+}
+
+/* Code columns */
+@media (max-width: 900px) {
+  .code-columns {
+    grid-template-columns: 1fr !important;
+  }
+  .conclusion-columns {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Arrow between flow steps */
+@media (max-width: 768px) {
+  .desktop-arrow {
+    transform: rotate(90deg);
+    margin: 0.25rem 0;
+  }
+}
+
+/* Touch targets and mobile typography */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 0.875rem;
+  }
+
+  section {
+    padding: 2.25rem 0;
+  }
+
+  .btn {
+    padding: 0.4375rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important;
+  }
+}
